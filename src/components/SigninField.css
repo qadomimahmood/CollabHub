@@ -1,0 +1,24 @@
+input{
+display: flex;
+border: none;
+border-radius: 4px;
+padding: 10px 0px;
+padding-left: 5px;
+background-color: #ECECEC;
+font-family: inherit;
+
+
+}
+/*
+How inputs behave
+
+<input> and <textarea> elements are form elements.
+
+Most browsers give them default styles, including font-family, font-size, padding, etc.
+
+That means even if your body says:
+
+body { font-family: 'Poppins', sans-serif; }
+
+
+Your input text might not inherit it automatically. Some browsers will use system fonts instead.*/

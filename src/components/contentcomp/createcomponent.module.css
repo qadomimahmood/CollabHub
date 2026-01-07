@@ -1,0 +1,143 @@
+.createcomponentcontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;/*dont make ir center cuz the center of it it fixed and will overflow*/
+    padding: 20px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+
+
+}
+.formcontainer{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: #6358DC 1px solid   ;
+    }
+.formheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formtitle{
+    margin: 0;
+}
+.closebutton{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease-in-out;
+
+}
+.closebutton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
+
+}
+.hr{
+    width: 100%;
+}
+.memberscontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+.dropdown{
+    width: 100%;
+    background-color:#ECECEC ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 110%;
+    padding: 10px;
+    border-radius: 4px;
+}
+.option{
+    padding: 8px;
+    cursor: pointer;
+    border: #6358DC 1px solid;
+    margin-bottom: 2px;
+    border-radius: 4px;
+
+}
+.option:hover{
+    background-color: #6358DC;
+    color: #fff;
+    transform: scale(1.01);
+    transition: transform .2s ease-in-out;
+}
+
+.taskscontainer{
+    display:flex;
+    gap: 10px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 50%;
+}
+.memberslist{
+    flex: 1;
+    border: #6358DC 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+    height: 150px;
+    overflow-y: auto;
+    
+}
+.selectedmember{
+     padding: 2px;
+    cursor: pointer;
+    border: #6358DC 1px solid;
+    margin-bottom: 2px;
+    border-radius: 4px;
+}
+.selectedmember:hover{
+    background-color: #6358DC;
+    color: #fff;
+    transform: scale(1.01);
+    transition: transform .2s ease-in-out;
+}
+.assignname{
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 4px;
+    height: 35px;
+
+}
+.createtaskbtn{
+
+}
+.rightsidecontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    /*If height is auto → browser grows the container → no overflow → no scrollbar.*/
+    max-height: 218px;
+}
+.role{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    }
+
+

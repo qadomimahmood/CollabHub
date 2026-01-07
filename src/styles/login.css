@@ -1,0 +1,120 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+
+
+
+.name-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;/*no need for these*/
+    text-align: center;/*check these */
+    
+}
+.name-container>*{
+    margin: 0px;
+}
+.name{
+    color: #6358DC;
+}
+
+
+.form-container{
+    display:flex;
+    flex-direction: column; 
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;/*margin: 0 auto only works on block-level elements with a width the form cant be inline-flex*/
+    width: 300px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+
+.form-container>input{
+    display:block;
+    width: 100%;
+    
+}
+.cb-forget{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;/*mus have a width set*/
+}
+.cb-forget>a{
+    color: #6358DC;
+}
+.cb-container{
+    display: flex;
+    gap:1px;
+}
+button{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 4px;
+    border: none;
+    background-color: #6358DC;
+    color: white;
+
+
+}
+.sign-up-container{
+    display: inline-flex;
+    align-items: center;
+    margin:0 auto;
+    margin-top: 10px;
+}
+.sign-up-container>*{
+    margin: 0px;
+}
+.sign-up-container>a{
+    color: #6358DC;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  /*margin-right: 10px; these will effect the whole row*/
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;                /* lines take all available space */
+  height: 2px;
+  background-color:#BFBFBF;  /* or blue */
+}
+
+.or-divider::before {
+  margin-right: 10px;     /* gap between left line and text */
+}
+
+.or-divider::after {
+  margin-left: 10px;      /* gap between right line and text */
+}
+.login-error-message{
+  height: 100px;
+  background-color: #f28b82;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-error-message>p{
+
+  margin: 0px;
+}
+
+
+

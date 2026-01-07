@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0px 4px rgba(0,0,0,0.08);
+  width: 100%;/*effect for the flex inthe home page if u dont include it it would take as much width as its need*/
+}
+
+.left_section {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between sidebar, logo, text */
+}
+
+.header_img {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.sidebar_button {
+  background: none;
+  cursor: pointer;
+}
+
+.sidebar_icon {
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.sidebar_icon:hover {
+  transform: scale(1.1);
+}
+
+.right_section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.createbtn {
+    font-family: poppins;
+    height: 30px;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.createbtn:hover {
+transform: scale(1.1);/*sacale is a value of transform*/
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.avatar:hover{
+    transform: scale(1.1);
+}
+
+.notifications {
+  font-size: 28px;
+  color: black;
+  font-variation-settings: "wght" 200, "FILL" 0;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.notifications:hover {
+  transform: scale(1.1);
+}

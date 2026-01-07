@@ -1,0 +1,20 @@
+.thirdpartybtn{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) ;
+    border:none;
+  font-family: inherit;
+
+    
+}
+.icon{
+    height: 20px;
+    flex: .25;
+}

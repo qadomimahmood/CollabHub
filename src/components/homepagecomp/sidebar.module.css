@@ -1,0 +1,93 @@
+.sidebar{
+background-color: #f0f0f0;
+display: flex;
+justify-content: center;
+height: calc(100vh - 50px);
+width: 200px;
+padding: auto auto;
+border-right: 1px solid #ECECEC;
+position: relative;
+
+
+
+}
+
+.sidebarcontent{
+/*position: fixed;*/
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+height: auto;
+height: 100%;
+}
+.closebutton{
+background-color: #f0f0f0;
+display: flex;
+justify-self: center;
+align-items: center;
+width: 20px;
+height: 20px;
+position: absolute;/* The element still starts where it originally was in the normal flow, but now overlaps doenst start from the top left corner of the parent  */
+left: 10px;
+top: 10px;
+transition: transform .2s ease-in-out;
+}
+.closebutton:hover{
+    transform: scale(1.1);
+
+}
+.sidebar_title{
+  border-bottom: 1px solid #ccc;
+
+}
+.navitem{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30px;
+padding: 10px 14px;
+background: none;
+cursor: pointer;
+color: #333;
+border-radius: 6px;
+transition: background-color 0.2s ease-in-out;
+position: relative;
+}
+.navitem::before {
+  content: "→";    
+  transform: translate(-20px, -2px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  /* transform 0.3s ease → Whenever the transform property changes (like translateX, translateY, scale, rotate, etc.), it will animate smoothly over 0.3 seconds using the ease timing function. */
+}
+.navitem:hover::before {
+  opacity: 1;
+ transform: translate(0, -2px);  
+}
+
+
+.navitem:hover{
+    background-color: #e6e6e6;
+}
+/*
+these animation will work 
+.navitem::before {
+  content: "→";                 // Insert an arrow symbol before the navitem content
+  transition: transform 0.3s ease, opacity 0.3s ease;  
+                                // Animate changes in transform and opacity over 0.3s using ease
+  position: absolute;           // Position absolutely relative to the parent .navitem
+  left: -10px;                  // Start 10px to the left of the parent's left edge
+  // The arrow is initially invisible because we don't set opacity yet (can set 0 if needed)
+}
+
+.navitem:hover::before {
+  opacity: 1;                   // Make the arrow fully visible on hover
+  transform: translateX(10px);  // Slide the arrow 10px to the right from its initial position
+}
+*/
+
+
